@@ -1,0 +1,129 @@
+.team {
+    background-image: url(./foto/bgg2.jpg);
+    width: 96.2%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-left: 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.team h1 {
+    display: inline-block;
+    position: relative;
+    margin-top: 55px;
+    padding-left: 10px;
+    color: #ff6d06; 
+    font-size: 30px;
+  }
+  .team h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: purple;
+  }
+  .team p {
+    margin-top: 5px;
+  }
+  .team img {
+    width: 100px;
+    height: auto;
+}
+
+.member {
+    width: 20%;
+    max-width: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    text-align: left;
+    background-color: rgba(128, 128, 128, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+    
+    
+}
+
+.member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+    margin-right: 10px;
+}
+.member h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.member h2 {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.member p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-top: 5px;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(211, 211, 211, 0.281);
+}
+
+.member::before,
+.member::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.member::before {
+    width: 20px;
+    height: 20px;
+    background: rgba(128, 128, 128, 0.5);
+    transform: rotate(45deg);
+    top: 0;
+    left: -10px;
+}
+
+.member::after {
+    width: 10px;
+    height: 10px;
+    background: white;
+    top: 5px;
+    left: -5px;
+}
+.member h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 99%;
+    width: 3px;
+    background-color: purple;
+  }
+  
+  .member h3:hover::before {
+    background-color: red;
+  }
+  
+/*mobil.*/
+@media screen and (max-width: 768px) {
+    .team {
+        height: auto;
+        width: auto;
+    }
+    .member {
+        width: 100%;
+    }
+}

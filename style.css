@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100&family=Encode+Sans+SC:wght@100&family=Noto+Serif+Balinese&family=Poppins:ital,wght@1,100&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-family: 'Encode Sans SC', sans-serif;
+  font-family: 'Noto Serif Balinese', serif;
+  font-family: 'Poppins', sans-serif;
+}
+header {
+  background-color: #ff6e06;
+  padding: 20px;
+}
+#logotipas {
+  width: 50px;
+  height: 50vh;
+}
+nav {
+  text-align: right;
+}
+
+nav a {
+  text-decoration: none;
+  color: #200007;
+  padding-left: 15px;
+  font-size: 13px; 
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a:hover {
+  color: #a8ff78;  
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, #8360c3, #2ebf91, #ffd452);
+  transition: width 0.3s ease;
+}
+nav a:hover::after {
+  width: 100%;
+}
+/* Media query pritaikymas mobiliems įrenginiams */
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+  }
+}
+
+
+.background-image {
+  height: 80vh;
+  background-image: url("./foto/jigar-panchal-WnZ4xu2_Gvw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  position: relative;
+  padding-left: 50px;
+  color:bisque;
+  padding-top: 250px;
+}
+
+.background-image h1,
+.background-image p {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+}
+
+.background-image h1::before,
+.background-image p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #ffd452;
+}
+.background-image h1 {
+  font-size: 55px;
+  color: #ff6d06;
+}
+.background-image p {
+  font-size: 25px;
+}
+
+.philosohpy {
+  background-color: #200007;
+  padding-top: 80px;
+  padding-left: 50px;
+  color: white;
+}
+.philosohpy h1 {
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+  color: #ff6d06; 
+  font-size: 30px;
+
+}
+.philosohpy h1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: purple;
+}
+.philosohpy p {
+  padding-top: 15px;
+  font-size: 15px;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fa-solid {
+  color: purple;
+  padding-top: 35px; 
+}
+
+.container h2 {
+  color: #ff6d06;
+  font-size: 18px;
+  padding: 10px;
+}
+.container p{
+  padding: 10px;
+  margin: 0;
+}
+
+.title-1 p,
+.title-2 p,
+.title-3 p,
+.title-4 p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.title-1:hover p,
+.title-2:hover p,
+.title-3:hover p,
+.title-4:hover p {
+  opacity: 1;
+}
+.container h2, p {
+  transition: color 0.3s ease;
+}
+.container
+p:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;/
+}
+
+/*mobil*/
+@media only screen and (max-width: 600px) {
+  .background-image {
+    padding-left: 20px;
+    padding-top: 150px;
+  }
+
+  .background-image h1 {
+    font-size: 40px;
+  }
+
+  .background-image p {
+    font-size: 18px;
+  }
+
+  .philosophy {
+    padding-top: 50px;
+    padding-left: 20px;
+    
+  }
+
+  .philosophy h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fa-solid {
+    padding-top: 15px;
+  }
+
+  .container h2 {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .container p {
+    padding: 5px;
+  }
+
+  .title-1 p,
+  .title-2 p,
+  .title-3 p,
+  .title-4 p {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+

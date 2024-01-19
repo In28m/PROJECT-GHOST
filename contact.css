@@ -1,0 +1,186 @@
+.contact {
+  background: hsl(240deg 71.43% 5.49%);
+  width: 96.2%;
+  height: 250vh auto;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-left: 50px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contact h1 {
+  display: inline-block;
+  position: relative;
+  margin-top: 55px;
+  padding-left: 10px;
+  color: #ff6d06; 
+  font-size: 30px;
+}
+.contact h1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: purple;
+}
+.container-info {
+  background-image: url("foto/pask.fo.jpg");
+  background-position: left;
+  background-size:  40%;
+  background-repeat: no-repeat;
+  width: 200%;
+  height: 80vh;
+  border: 1px solid white;
+  margin-right: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 55px;
+
+}
+.content h3 {
+  color: black;
+  flex: 2;
+  padding-left: 50px;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form {
+  max-width: 40%;
+  padding-right: 20px; 
+  margin-left: 130px;
+  text-align: center; 
+}
+#forma h2 {
+  color: #ff6d06;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+input {
+  background: none;
+  border: 1px solid white;
+  color: antiquewhite;
+  outline: none;
+  padding: 14px;
+  display: block;
+  margin-bottom: 15px;      
+}
+input:hover {
+  border: 1px solid #ff6d06;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: white;
+}
+
+.info {
+  width: 300px;
+  height: 220px;
+  background-color: none;
+  border: 1px solid white;
+  padding: 30px;
+  margin: 50px;
+}
+.sub {
+  color: #ff6d06;
+  background: none;
+  border: none;
+}
+.fa-solid {
+  color: #ff6d06;
+}
+.sub:hover,
+.sub:hover i {
+  background: #ff6d06;
+  color: blueviolet;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-align: center;
+}
+.maps {
+  width: 96%;
+  height: 50vh;
+  margin-top: 10px;
+}
+.social-cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  margin: 15px;
+}
+.social-cards h1:hover {
+  color: blue;
+}
+
+.fa-brands {
+  padding: 25px;
+  font-size: 25px;
+  color: #544629;
+}
+.fa-brands:hover {
+  color: purple;
+}
+/*mobil*/
+@media only screen and (max-width: 768px) {
+  .contact {
+    height: auto;
+    width: auto;
+  }
+
+  .container-info {
+    background-size: 100%;
+    width: auto;
+    height: auto;  
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .content {
+    position: relative;
+  }
+
+  .content h3 {
+    position: relative;
+    background-position: center;
+    text-align: center;
+    margin-left: 0;
+    padding-right: 0;
+    top: 250px; 
+  }
+  form {
+    max-width: 100%;
+    margin-left: 0;
+    padding-right: 0;
+    margin-top: 650px;
+  }
+
+  .maps {
+    width: 505px;
+    height: 300px;
+  }
+  .social-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .social-cards > div {
+    width: 100%; /* Užtikrina, kad kiekvienas stulpelio elementas užimtų 100% pločio */
+    margin-bottom: 10px; /* Galite keisti pagal poreikį, tai nustato tarpą tarp stulpelių */
+  }
+}
